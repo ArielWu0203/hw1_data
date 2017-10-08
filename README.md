@@ -19,7 +19,7 @@
   * **概念** 共分三個動作，第一個動作先將前n-1個Disk由A移到B柱n號Disk移到C柱，而而第二個動作將n號Disk由A移到C柱，最後第三個動作將前n-1個盤子由B移到C柱。
   * **附註** 第一和第三個動作代表已忽略n號Disk，因為n號盤最大，所以其他Disk皆可以任意移動在這三根柱子上。
   * Function所設的參數為n`需移動的Disk個數`、a`起點`、b`經過`、c`終點柱`。
-  * 若未到達終止條件時，做第一個動作`call function(n-1,a,c,b)`，第二個動作移動n號Disk'`從a移動到c`，最後第三個動作`call function(n-1,b,a,c)`。
+  * 若未到達終止條件時，做第一個動作`call function(n-1,a,c,b)`，第二個動作移動n號Disk`從a移動到c`，最後第三個動作`call function(n-1,b,a,c)`。
   * 達終止條件時，1號Disk從a移動到c，並return`這時最後一個Function已完成`，並回去繼續執行上一個呼叫的Function。
   * 每做一次移動，都要計算步數。
 * 程式架構
