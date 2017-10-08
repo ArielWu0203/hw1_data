@@ -24,5 +24,5 @@
   * 每做一次移動，都要計算步數。
 * 程式架構
   * if (達終止條件) 移動且return。
-  * else 做三個動作。 `call function(n-1,a,c,b)``n號Disk從a移動到c``call function(n-1,b,a,c)`
+  * else 做三個動作。 `call function(n-1,a,c,b)` `n號Disk從a移動到c` `call function(n-1,b,a,c)`
   * 移動時，step+1
